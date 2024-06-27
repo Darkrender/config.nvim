@@ -41,3 +41,5 @@ vim.keymap.set('v', '<c-k>', ":m '<-2<cr>gv=gv", { desc = 'move selection line u
 
 -- fixes issue where ctrl+c causes lsp diagnostics not to show when exiting insert mode
 vim.keymap.set('i', '<c-c>', '<esc>', { desc = 'rebinding ctrl+c to escape' })
+
+vim.keymap.set('n', '<leader>gs', ':Git<CR>', { desc = 'Calls git status and opens fugitive git window' })
