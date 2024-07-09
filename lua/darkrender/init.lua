@@ -32,7 +32,7 @@ autocmd('LspAttach', {
     map('<leader>rn', vim.lsp.buf.rename, '[r]e[n]ame')
     map('<leader>ca', vim.lsp.buf.code_action, '[c]ode [a]ction')
     map('K', vim.lsp.buf.hover, 'hover documentation')
-    map('gd', vim.lsp.buf.declaration, '[g]oto [d]eclaration')
+    map('gD', vim.lsp.buf.declaration, '[g]oto [d]eclaration')
 
     -- the following two autocommands are used to highlight references of the
     -- word under your cursor when your cursor rests there for a little while.
