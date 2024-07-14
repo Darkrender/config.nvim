@@ -27,7 +27,7 @@ return {
 
     local servers = {
       clangd = {},
-
+      zls = {},
       lua_ls = {
         settings = {
           lua = {

@@ -16,7 +16,7 @@ vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'open diagn
 --
 -- note: this won't work in all terminal emulators/tmux/etc. try your own mapping
 -- or just use <c-\><c-n> to exit terminal mode
-vim.keymap.set('t', '<esc><esc>', '<c-\\><c-n>', { desc = 'exit terminal mode' })
+vim.keymap.set('t', '<c-space>', '<c-\\><c-n> :q<CR>', { desc = 'exit terminal mode' })
 
 -- tip: disable arrow keys in normal mode
 -- vim.keymap.set('n', '<left>', '<cmd>echo "use h to move!!"<cr>')
@@ -43,3 +43,6 @@ vim.keymap.set('v', '<c-k>', ":m '<-2<cr>gv=gv", { desc = 'move selection line u
 vim.keymap.set('i', '<c-c>', '<esc>', { desc = 'rebinding ctrl+c to escape' })
 
 vim.keymap.set('n', '<leader>gs', ':Git<CR>', { desc = 'Calls git status and opens fugitive git window' })
+
+-- open terminal at bottom
+vim.keymap.set('n', '<c-space>', ':15split | term<CR> i', { desc = 'Opens a new terminal at bottom' })
