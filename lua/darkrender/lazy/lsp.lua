@@ -26,7 +26,9 @@ return {
     capabilities = vim.tbl_deep_extend('force', capabilities, cmp_lsp.default_capabilities())
 
     local servers = {
-      clangd = {},
+      clangd = {
+        cmd = { 'clangd', '--header-insertion=never' },
+      },
       zls = {},
       lua_ls = {
         settings = {
